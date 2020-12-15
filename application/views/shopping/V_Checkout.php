@@ -51,8 +51,6 @@
                </tr>
                <?php endforeach; ?>          
           </table>
-     <!-- </form> -->
-     <!-- <center><a class="btn btn-primary" href="<?php echo base_url('C_Berita/insert'); ?>">+ Tambah Berita</a></center> -->
      
 </body>
 </html>

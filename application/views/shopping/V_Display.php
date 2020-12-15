@@ -43,16 +43,11 @@
                     <td><?php echo $sp['nama_barang'] ?></td>
                     <td><?php echo "Rp".number_format($sp['harga_barang'],0,',','.')?></td>
                     <td><?php echo $sp['stok_barang'] ?></td>
-                    <!-- <td align="center"> <?php echo anchor('C_Shopping/Masukan_Keranjang/'.$sp['id']); ?></td>  -->
-                    <!-- <td><?php echo anchor('C_Shopping/Masukan_Keranjang/'.$sp['id'],'<div class="btn btn-sm btn-primary">Tambah Ke Keranjang</div>');?></td>  -->
                     <td>
                     <button type=" button" class="btn btn-light"><?php echo anchor('C_Shopping/data_barang/' . $sp['id'], 'Masukan Keranjang'); ?></button>
                     </td>
                </tr>
                <?php endforeach; ?>          
           </table>
-     <!-- </form> -->
-     <!-- <center><a class="btn btn-primary" href="<?php echo base_url('C_Berita/insert'); ?>">+ Tambah Berita</a></center> -->
-     
 </body>
 </html>
