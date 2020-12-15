@@ -45,6 +45,7 @@
             </tr>
             <?php } ?> 
         </table>
+        <center><a class="btn btn-primary" href="<?php echo base_url('C_Customer/pembayaran'); ?>">Check Out</a></center>
         <center><a class="btn btn-primary" href="<?php echo base_url('C_Shopping/index'); ?>">Kembali Belanja</a></center>  
 </body>
 </html>
