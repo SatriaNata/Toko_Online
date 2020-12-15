@@ -7,6 +7,9 @@ class C_Mahasiswa extends CI_Controller{
           $this->load->library('template');
      }
 
+     public function display_mahasiswa(){
+          $this->load->display('mahasiswa/V_Mahasiswa');
+     }
      // public function utama(){
      //      $this->load->model('M_Mahasiswa');
      //      $data['mahasiswa'] = $this->M_Mahasiswa->getMahasiswa(3, 0);
