@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+      <meta name="description" content="">
+      <meta name="author" content="">
+
+      <title>Master Template CodeIgniter</title>
+
+      Bootstrap core CSS
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+      Custom styles for this template
+      <link href="starter-template.css" rel="stylesheet">
+
+      Just for debugging purposes. Don't actually copy these 2 lines!
+      [if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]
+      <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+      HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+      [if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]
+      <style>
+            body {
+               padding-top: 50px;
+         }
+         .master-template {
+               padding: 40px 15px;
+               text-align: center;
+         }
+         </style>
+   </head> -->
+
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Integrasi Bootstap Dengan CodeIgniter 3</title>
+      <!-- Bootstrap -->
+      <link rel="stylesheet" media="all" href="<?php echo base_url()?>assets/css/bootstrap.min.css" type="text/css">
+      <script src="<?php echo base_url()?>assets/css/bootstrap.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+<center>
+      <table border="1px solid black" style="margin:20px auto;" width="1000px">
+      <tr>
+         <td align="center"><h2>Header</h2></td>
+      </tr>
+      <tr align="center">
+         <td>
+               <!-- <a href="<?= site_url('C_Template/index') ?>">Home</a> |
+               <a href="<?= site_url('C_Template/berita') ?>">Berita</a> |
+               <a href="<?= site_url('C_Template/mahasiswa') ?>">Mahasiswa</a> |
+               <a href="<?= site_url('C_Template/logout') ?>">Logout</a> -->
+               <a  href="<?= site_url('C_Template/index') ?>">Home</a> |
+               <a  href="<?= site_url('C_Shopping') ?>">Daftar Barang</a> |
+               <a  href="<?= site_url('C_Shopping/Keranjang') ?>">Keranjang</a> |
+               <!--<a  href="<?= site_url('C_Template/mahasiswa') ?>">Mahasiswa</a> |-->
+               <a  href="<?= site_url('C_Login/logout') ?>">Logout</a>
+         </td>
+      </tr>
+      <tr>
+         <td align="center"><?= $_content; ?></td>
+      </tr>
+      <tr>
+         <td align="center"><h2>Footer</h2></td>
+      </tr>
+      </table>
+</center>
+      <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
+         <div class="container">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="<?= site_url('main') ?>">Project name</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+               <ul class="nav navbar-nav">
+                  <li><a href="<?= site_url('main') ?>">Home</a></li>
+                  <li><a href="<?= site_url('main/about') ?>">About</a></li>
+                  <li><a href="<?= site_url('main/contact') ?>">Contact</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+
+      <div class="container">
+
+         <div class="master-template">
+         </div> -->
+
+      <!-- </div>/.container -->
+</body>
+</html>
