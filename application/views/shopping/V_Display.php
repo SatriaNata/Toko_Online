@@ -29,6 +29,7 @@
                     <th>No.</th>
                     <th>Gambar</th>
                     <th>Nama Barang</th>
+                    <th>Berat Barang "("gram")"</th>
                     <th>Harga</th>
                     <th>Stok</th>
                     <!-- <th>Jumlah barang</th> -->
@@ -41,6 +42,7 @@
                     <td><?php echo $no++ ?></td>
                     <td><img src="<?php echo base_url(); ?>assets/foto/<?php echo $sp['gambar_barang'] ?>" width = "150px"></td>
                     <td><?php echo $sp['nama_barang'] ?></td>
+                    <td><?php echo $sp['berat_barang']?></td>
                     <td><?php echo "Rp".number_format($sp['harga_barang'],0,',','.')?></td>
                     <td><?php echo $sp['stok_barang'] ?></td>
                     <td>
