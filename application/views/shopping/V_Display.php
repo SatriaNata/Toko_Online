@@ -26,17 +26,18 @@
      <?php echo form_close()?>
      <center>
      <div class="container-fluid">
-     <div class="row text-center">
+     <div class="row justify-content-md-center">
           <?php foreach ($shopping as $sp):?>
-               <div class="card ml-1 col-3" style="width: 15rem;">
+               <div class="card ml-3 col-3" style="width: 15rem;">
                <center><img src="<?php echo base_url(); ?>assets/foto/<?php echo $sp['gambar_barang'] ?>" class="card-img-top" alt="..." style="width: 150px;"></center>
                     <div class="card-body">
                          <h5 class="card-title mb-1"><?php echo $sp['nama_barang'] ?></h5>
                          <small class="btn btn-sm btn-light"><?php echo $sp['berat_barang'] ?> Gram</small> <br>
                          <small class="btn btn-sm btn-light"><?php echo $sp['stok_barang']?></small> <br>
-                         <span class="badge bg-success mb-3"><?php echo "Rp".number_format($sp['harga_barang'],0,',','.') ?></span>
-                         <a href="#" class="btn btn-sm btn-primary">Tambah ke Keranjang</a>
-                         <a href="#" class="btn btn-sm btn-success">Detail</a>
+                         <span class="badge bg-success mb-3"><?php echo "Rp".number_format($sp['harga_barang'],0,',','.') ?></span><br>
+                         <button type=" button" class="btn btn-sm btn-light"><?php echo anchor('C_Shopping/data_barang/' . $sp['id'], 'Masukan Keranjang'); ?></button>
+                         <!-- <a href="#" class="btn btn-sm btn-primary">Tambah ke Keranjang</a>
+                         <a href="#" class="btn btn-sm btn-success">Detail</a> -->
                     </div>
                </div>
           <?php endforeach;?>
