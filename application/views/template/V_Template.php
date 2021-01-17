@@ -47,31 +47,38 @@
 </head>
 
 <body>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+   <div class="container-fluid">
+      <img class="rounded" src="<?php echo base_url(); ?>assets/foto/logo.jpg" class="card-img-top" alt="..." width="50">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="<?= site_url('C_Template/index') ?>">Home</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="<?= site_url('C_Template/index') ?>">Daftar Barang</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="<?= site_url('C_Shopping/Keranjang') ?>">Keranjang</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="<?= site_url('C_Login/logout') ?>">Logout</a>
+         </li>
+         <!-- </ul>
+         <form class="d-flex">
+         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+         <button class="btn btn-outline-success" type="submit">Search</button>
+         </form> -->
+      </div>
+   </div>
+</nav>
+
 <center>
-      <table border="1px solid black" style="margin:20px auto;" width="1000px">
-      <tr>
-         <td align="center"><h2>Header</h2></td>
-      </tr>
-      <tr align="center">
-         <td>
-               <!-- <a href="<?= site_url('C_Template/index') ?>">Home</a> |
-               <a href="<?= site_url('C_Template/berita') ?>">Berita</a> |
-               <a href="<?= site_url('C_Template/mahasiswa') ?>">Mahasiswa</a> |
-               <a href="<?= site_url('C_Template/logout') ?>">Logout</a> -->
-               <a  href="<?= site_url('C_Template/index') ?>">Home</a> |
-               <a  href="<?= site_url('C_Shopping') ?>">Daftar Barang</a> |
-               <a  href="<?= site_url('C_Shopping/Keranjang') ?>">Keranjang</a> |
-               <!--<a  href="<?= site_url('C_Template/mahasiswa') ?>">Mahasiswa</a> |-->
-               <a  href="<?= site_url('C_Login/logout') ?>">Logout</a>
-         </td>
-      </tr>
-      <tr>
-         <td align="center"><?= $_content; ?></td>
-      </tr>
-      <tr>
-         <td align="center"><h2>Footer</h2></td>
-      </tr>
-      </table>
+   <div><?= $_content; ?></div>
+      
 </center>
       <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
          <div class="container">
