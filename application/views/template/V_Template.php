@@ -59,7 +59,7 @@
             <a class="nav-link active" aria-current="page" href="<?= site_url('C_Template/index') ?>">Home</a>
          </li>
          <li class="nav-item">
-            <a class="nav-link" href="<?= site_url('C_Template/index') ?>">Daftar Barang</a>
+            <a class="nav-link" href="<?= site_url('C_Shopping/index') ?>">Daftar Barang</a>
          </li>
          <li class="nav-item">
             <a class="nav-link" href="<?= site_url('C_Shopping/Keranjang') ?>">Keranjang</a>

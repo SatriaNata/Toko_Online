@@ -8,7 +8,7 @@ class C_Template extends CI_Controller{
           }
      }
      public function index(){
-          $this->template->display('berita/V_Berita');
+          $this->template->display('template/V_Home');
      }
      // public function index(){
      //      $this->template->display('template/V_Home');
