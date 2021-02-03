@@ -35,7 +35,7 @@
                          <small class="btn btn-sm btn-light"><?php echo $sp['berat_barang'] ?> Gram</small> <br>
                          <small class="btn btn-sm btn-light"><?php echo $sp['stok_barang']?></small> <br>
                          <span class="badge bg-success mb-3"><?php echo "Rp".number_format($sp['harga_barang'],0,',','.') ?></span><br>
-                         <button type=" button" class="btn btn-sm btn-light"><?php echo anchor('C_Shopping/data_barang/' . $sp['id'], 'Masukan Keranjang'); ?></button>
+                         <button type=" button" class="btn btn-sm btn-light"><?php echo anchor('C_Cart/insertCart/' . $sp['id'], 'Masukan Keranjang'); ?></button>
                          <!-- <a href="#" class="btn btn-sm btn-primary">Tambah ke Keranjang</a>
                          <a href="#" class="btn btn-sm btn-success">Detail</a> -->
                     </div>

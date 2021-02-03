@@ -44,6 +44,7 @@
       <!-- Bootstrap -->
       <link rel="stylesheet" media="all" href="<?php echo base_url()?>assets/css/bootstrap.min.css" type="text/css">
       <script src="<?php echo base_url()?>assets/css/bootstrap.min.js" type="text/javascript"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 </head>
 
 <body>
@@ -59,7 +60,7 @@
             <a class="nav-link active" aria-current="page" href="<?= site_url('C_Template/index') ?>">Home</a>
          </li>
          <li class="nav-item">
-            <a class="nav-link" href="<?= site_url('C_Template/index') ?>">Daftar Barang</a>
+            <a class="nav-link" href="<?= site_url('C_Shopping/index') ?>">Daftar Barang</a>
          </li>
          <li class="nav-item">
             <a class="nav-link" href="<?= site_url('C_Shopping/Keranjang') ?>">Keranjang</a>
@@ -72,6 +73,17 @@
          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
          <button class="btn btn-outline-success" type="submit">Search</button>
          </form> -->
+         
+      </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li>
+         <?php 
+         $keranjang = 'Keranjang Belanja: '.$this->cart->total_items(). ' barang' 
+         ?>
+         <?php echo anchor('C_Cart/detailCart', $keranjang) ?>
+            <a href=" "><i class="fas fa-cart-arrow-down"></i></a>
+         </li>
       </div>
    </div>
 </nav>
